@@ -19,14 +19,33 @@
 
 .meni-desno {
     width: 50px;
-    height: auto;
-    content:  url('src/assets/profile_pic.png');
+    height: 50px;
+    position: relative;
+    cursor: pointer;
 }
-.meni-desno:hover {
-    content:  url('src/assets/profile_pic_hover.png');
-    scale: 95%;
-    transition: 0.5s;
-} 
+
+.profile-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: auto;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.profile-icon-hover {
+    opacity: 0;
+}
+
+.meni-desno:hover .profile-icon-normal {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.meni-desno:hover .profile-icon-hover {
+    opacity: 1;
+    transform: scale(0.95);
+}
 
 .lokacija {
     width: 25px;
@@ -41,11 +60,21 @@
 }
 
 .search {
+    position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 .searchTerm {
@@ -54,10 +83,6 @@
     border: 0;
     border-radius: 8px;
     font-size: 13px;
-    background-image: url('src/assets/search.png');
-    background-position: 35px 9px;
-    background-size: 20px;
-    background-repeat: no-repeat;
     padding: 10px 20px 10px 65px;
     background-color: rgb( 243, 229, 255, 1);
 }
@@ -72,7 +97,11 @@
 
     .meni-desno {
         width: 40px;
-        height: auto;
+        height: 40px;
+    }
+
+        .profile-icon {
+        width: 40px;
     }
 
     .lokacija {
@@ -101,7 +130,11 @@
 
     .meni-desno {
         width: 35px;
-        height: auto;
+        height: 35px;
+    }
+
+    .profile-icon {
+        width: 35px;
     }
 
     .lokacija {
@@ -150,7 +183,11 @@
 
     .meni-desno {
         width: 35px;
-        height: auto;
+        height: 35px;
+    }
+
+    .profile-icon {
+        width: 35px;
     }
 
     .meni-centar {
@@ -166,7 +203,11 @@
 
     .meni-desno {
         width: 33px;
-        height: auto;
+        height: 33px;
+    }
+
+    .profile-icon {
+        width: 33px;
     }
 
     .meni-centar {
@@ -182,7 +223,11 @@
 
     .meni-desno {
         width: 35px;
-        height: auto;
+        height: 35px;
+    }
+
+    .profile-icon {
+        width: 35px;
     }
 
     .lokacija {
@@ -207,7 +252,11 @@
 
     .meni-desno {
         width: 30px;
-        height: auto;
+        height: 30px;
+    }
+
+    .profile-icon {
+        width: 30px;
     }
 
     .lokacija {
@@ -244,7 +293,11 @@
 
     .meni-desno {
         width: 30px;
-        height: auto;
+        height: 30px;
+    }
+
+    .profile-icon {
+        width: 30px;
     }
 
     .lokacija {
