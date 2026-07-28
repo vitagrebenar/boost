@@ -2,13 +2,13 @@
     background-color: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 30px 30px 0px 0px;
-    display: inline-block;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 130px;
     display: flex;
+    z-index: 1000;
 }
 
 .footer-content {
@@ -21,214 +21,70 @@
     margin: auto;
 }
 
-.footer-content-left{
+.footer-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+/* Osnovne ikone */
+.footer-icon {
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+/* Neaktivne */
+.home-icon {
     width: 40px;
-    height: auto;
-    content: url('src/assets/home_unactive.png');
 }
 
-.footer-content-left:hover{
-    content: url('src/assets/home_active.png');
-    width: 80px;
-    height: auto;
-    transition: 0.3s;
-    margin-left: -30px;
-}
-
-.footer-content-center {
+.user-icon {
     width: 30px;
-    height: auto;
-    content: url('src/assets/user_unactive.png');
 }
 
-.footer-content-center:hover {
-    content: url('src/assets/user_active.png');
-    width: 80px;
-    height: auto;
-    transition: 0.3s;
-}
-
-.footer-content-right {
+.cart-icon {
     width: 40px;
-    height: auto;
-    content: url('src/assets/cart_unactive.png');
 }
 
-.footer-content-right:hover {
-    content: url('src/assets/cart_active.png');
+/* Aktivne su preko neaktivnih */
+.home-icon-active,
+.user-icon-active,
+.cart-icon-active {
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+}
+
+/* Hover animacija */
+.footer-link:hover .home-icon {
+    opacity: 0;
     width: 80px;
-    height: auto;
-    transition: 0.3s;
-    margin-right: -30px;
 }
 
-
-
-@media (max-width: 1050px) {
-    .footer {
-        height: 120px;
-        border-radius: 25px 25px 0px 0px;
-    }
-
-    .footer-content {
-        width: 60%;
-    }
-
-    .footer-content-left{
-        width: 35px;
-    }
-
-    .footer-content-left:hover{
-        width: 70px;
-    }
-
-    .footer-content-center {
-        width: 25px;
-    }
-
-    .footer-content-center:hover {
-        width: 70px;
-    }
-
-    .footer-content-right {
-        width: 35px;
-    }
-
-    .footer-content-right:hover {
-        width: 70px;
-    }
+.footer-link:hover .home-icon-active {
+    opacity: 1;
+    width: 80px;
 }
 
-@media (max-width: 850px) {
-    .footer {
-        height: 100px;
-        border-radius: 20px 20px 0px 0px;
-    }
+.footer-link:hover .user-icon {
+    opacity: 0;
+    width: 30px;
 }
 
-@media (max-width: 700px) {
-    .footer-content {
-        width: 60%;
-    }
-
-    .footer-content-left{
-        width: 30px;
-    }
-
-    .footer-content-left:hover{
-        width: 65px;
-    }
-
-    .footer-content-center {
-        width: 20px;
-    }
-
-    .footer-content-center:hover {
-        width: 65px;
-    }
-
-    .footer-content-right {
-        width: 30px;
-    }
-
-    .footer-content-right:hover {
-        width: 65px;
-    }
+.footer-link:hover .user-icon-active {
+    opacity: 1;
+    width: 80px;
 }
 
-@media (max-width: 530px) {
-    .footer-content {
-        width: 60%;
-    }
-
-    .footer-content-left{
-        width: 30px;
-    }
-
-    .footer-content-left:hover{
-        width: 60px;
-    }
-
-    .footer-content-center {
-        width: 20px;
-    }
-
-    .footer-content-center:hover {
-        width: 60px;
-        margin-left: -5px;
-    }
-
-    .footer-content-right {
-        width: 30px;
-    }
-
-    .footer-content-right:hover {
-        width: 60px;
-    }
+.footer-link:hover .cart-icon {
+    opacity: 0;
+    width: 80px;
 }
 
-@media (max-width: 380px) {
-    .footer-content {
-        width: 70%;
-    }
-
-    .footer-content-left{
-        width: 25px;
-    }
-
-    .footer-content-left:hover{
-        width: 55px;
-    }
-
-    .footer-content-center {
-        width: 15px;
-    }
-
-    .footer-content-center:hover {
-        width: 55px;
-        margin-left: -17px;
-    }
-
-    .footer-content-right {
-        width: 25px;
-    }
-
-    .footer-content-right:hover {
-        width: 55px;
-    }
-}
-
-@media (max-width: 250px) {
-    .footer {
-        height: 85px;
-    }
-
-    .footer-content {
-        width: 70%;
-    }
-
-    .footer-content-left{
-        width: 20px;
-    }
-
-    .footer-content-left:hover{
-        width: 50px;
-    }
-
-    .footer-content-center {
-        width: 10px;
-    }
-
-    .footer-content-center:hover {
-        width: 50px;
-        margin-left: -22px;
-    }
-
-    .footer-content-right {
-        width: 20px;
-    }
-
-    .footer-content-right:hover {
-        width: 50px;
-    }
+.footer-link:hover .cart-icon-active {
+    opacity: 1;
+    width: 80px;
 }
