@@ -1,0 +1,274 @@
+.navbar {
+    padding: 20px 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meni-lijevo {
+    width: 160px;
+    height: auto;
+}
+
+.meni-centar {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-left: -115px;
+}
+
+.meni-desno {
+    width: 50px;
+    height: auto;
+    content:  url('src/assets/profile_pic.png');
+}
+.meni-desno:hover {
+    content:  url('src/assets/profile_pic_hover.png');
+    scale: 95%;
+    transition: 0.5s;
+} 
+
+.lokacija {
+    width: 25px;
+    height: auto;
+}
+
+.lokacija-tekst {
+    font-size: 20px;
+    padding-top: 4px;
+    font-weight: 500;
+    color: rgba(59, 59, 59, 0.8);
+}
+
+.search {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.searchTerm {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 8px;
+    font-size: 13px;
+    background-image: url('src/assets/search.png');
+    background-position: 35px 9px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 65px;
+    background-color: rgb( 243, 229, 255, 1);
+}
+
+
+
+@media (max-width: 1050px) {
+    .meni-lijevo {
+        width: 130px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 40px;
+        height: auto;
+    }
+
+    .lokacija {
+        width: 20px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 18px;
+    }
+    .app {
+        width: 80%;
+        margin: auto;
+    }
+
+    .meni-centar {
+        margin-left: -90px;
+    }
+}
+
+@media (max-width: 900px) {
+    .meni-lijevo {
+        width: 125px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 35px;
+        height: auto;
+    }
+
+    .lokacija {
+        width: 18px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 16px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .meni-centar {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .lokacija {
+        width: 16px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 14px;
+    }
+
+    .meni-centar {
+        margin-left: -30px;
+    }
+
+    .meni-lijevo {
+        width: 110px;
+        height: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .meni-lijevo {
+        width: 85px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 35px;
+        height: auto;
+    }
+
+    .meni-centar {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .meni-lijevo {
+        width: 65px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 33px;
+        height: auto;
+    }
+
+    .meni-centar {
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .meni-lijevo {
+        width: 65px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 35px;
+        height: auto;
+    }
+
+    .lokacija {
+        width: 16px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 12px;
+    }
+
+    .meni-centar {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .meni-lijevo {
+        width: 55px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 30px;
+        height: auto;
+    }
+
+    .lokacija {
+        width: 12px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 10px;
+    }
+
+    .meni-centar {
+        gap: 5px;
+    }
+
+    .searchTerm {
+        font-size: 10px;
+        padding: 5px 10px 5px 35px;
+        background-size: 15px;
+        background-position: 15px;
+    }
+
+    .meni-centar {
+        margin-left: -5px;
+    }
+
+}
+
+@media (max-width: 290px) {
+    .meni-lijevo {
+        width: 55px;
+        height: auto;
+    }
+
+    .meni-desno {
+        width: 30px;
+        height: auto;
+    }
+
+    .lokacija {
+        width: 12px;
+        height: auto;
+    }
+
+    .lokacija-tekst {
+        font-size: 8px;
+    }
+
+    .meni-centar {
+        gap: 5px;
+    }
+
+    .searchTerm {
+        font-size: 10px;
+        padding: 5px 10px 5px 35px;
+        background-size: 15px;
+        background-position: 15px;
+    }
+
+    .meni-centar {
+        margin-left: 0px;
+    }
+}
+

@@ -1,0 +1,69 @@
+.food-display h2 {
+    font-size: max(2vw,24px);
+    font-weight: 600;
+    color: #626262;
+    margin-top: -10px;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    margin-top: 30px;
+    margin-bottom: 250px;
+    gap: 30px;
+    row-gap: 50px;
+    animation: fadeIn 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill,minmax(190px,1fr));
+        gap: 27px;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 530px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        gap: 25px;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill,minmax(110px,1fr));
+        gap: 20px;
+        row-gap: 25px;
+    }
+}
+
+@media (max-width: 330px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
+        gap: 15px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 250px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill,minmax(70px,1fr));
+        gap: 15px;
+        row-gap: 20px;
+    }
+}
+
+
+

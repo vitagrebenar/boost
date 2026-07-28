@@ -1,0 +1,283 @@
+.banner-overlay img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.banner-overlay {
+    content: black;
+}
+
+.banner-overlay2 img{
+    visibility: hidden;
+}
+
+.tekst {
+    margin-top: -1745px;
+    margin-left: 13%;
+    animation: fadeIn 2s;
+}
+
+.naslov {
+    font-size: 3.7vw;
+    margin-bottom: 1vw;
+    color: white;
+    text-shadow: 5px 5px 10px #00000015;
+}
+
+.podnaslov {
+    font-size: 1.7vw;
+    color: white;
+    text-shadow: 5px 5px 10px #00000015;
+}
+
+.button {
+    border: none;
+    border-radius: 1vw;
+    padding: 1.8vw 2.8vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8vw;
+    margin: 3.5vw 0vw;
+    cursor: pointer;
+    background-color: white; 
+    color:rgba(130, 0, 255, 1) ;
+    box-shadow: 5px 5px 10px #00000015;
+  }
+
+.button:hover {
+    background-color: #500baf;
+    color: white;
+    transition: 0.3s;
+}
+
+
+@media (min-width: 1023px) {
+    .banner-overlay img{
+       visibility: hidden;
+    }
+
+    .banner-overlay2 img{
+        visibility: inherit;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -22%;
+        margin-left: 12%;
+    }
+
+    .naslov {
+        font-size: 2.5vw;
+    }
+
+    .podnaslov {
+        font-size: 1vw;
+    }
+    
+    .button {
+        padding: 1.1vw 2.1vw;
+        font-size: 1.1vw;
+        margin: 2vw 0vw;
+    }
+}    
+
+@media (max-width: 1023px) {
+    .banner-overlay img{
+       visibility: inherit;
+       margin-top: 21%;
+       width: 100%;
+    }
+
+    .banner-overlay2 img{
+        visibility: hidden;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -34vw;
+        margin-left: 10%;
+    }
+
+    .naslov {
+        font-size: 4vw;
+    }
+
+    .podnaslov {
+        font-size: 2vw;
+    }
+    
+    .button {
+        padding: 2.1vw 3.1vw;
+        font-size: 2.1vw;
+        margin: 2vw 0vw;
+    }
+}    
+
+@media (max-width: 670px) {
+    .banner-overlay img{
+       visibility: inherit;
+       margin-top: 21%;
+       width: 100%;
+    }
+
+    .banner-overlay2 img{
+        visibility: hidden;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -35vw;
+        margin-left: 10%;
+    }
+
+    .naslov {
+        font-size: 4vw;
+    }
+
+    .podnaslov {
+        font-size: 2vw;
+    }
+    
+    .button {
+        padding: 2.1vw 3.1vw;
+        font-size: 2.1vw;
+        margin: 2vw 0vw;
+    }
+}    
+
+@media (max-width: 470px) {
+    .banner-overlay img{
+       visibility: inherit;
+       margin-top: 21%;
+       width: 100%;
+    }
+
+    .banner-overlay2 img{
+        visibility: hidden;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -37vw;
+        margin-left: 10%;
+    }
+
+    .naslov {
+        font-size: 4vw;
+    }
+
+    .podnaslov {
+        font-size: 2vw;
+    }
+    
+    .button {
+        padding: 2.1vw 3.1vw;
+        font-size: 2.1vw;
+        margin: 2vw 0vw;
+    }
+}    
+
+@media (max-width: 330px) {
+    .banner-overlay img{
+       visibility: inherit;
+       margin-top: 21%;
+       width: 100%;
+    }
+
+    .banner-overlay2 img{
+        visibility: hidden;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -39vw;
+        margin-left: 10%;
+    }
+
+    .naslov {
+        font-size: 4vw;
+    }
+
+    .podnaslov {
+        font-size: 2vw;
+    }
+    
+    .button {
+        padding: 2.1vw 3.1vw;
+        font-size: 2.1vw;
+        margin: 2vw 0vw;
+    }
+}    
+
+@media (max-width: 280px) {
+    .banner-overlay img{
+       visibility: inherit;
+       margin-top: 21%;
+       width: 100%;
+    }
+
+    .banner-overlay2 img{
+        visibility: hidden;
+        margin-top: -1000px;
+        width: 133.5%;
+        margin-left: -21%;
+    }
+
+    .banner {
+        margin-top: -15%;
+    }
+
+    .tekst {
+        margin-top: -40vw;
+        margin-left: 10%;
+    }
+
+    .naslov {
+        font-size: 4vw;
+    }
+
+    .podnaslov {
+        font-size: 2vw;
+    }
+    
+    .button {
+        padding: 2.1vw 3.1vw;
+        font-size: 2.1vw;
+        margin: 2vw 0vw;
+    }
+}    
